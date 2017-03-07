@@ -3,6 +3,12 @@
 public class PlayerShoot : MonoBehaviour {
 
     public PlayerWeapon weapon;
+    private bool loaded = true;
+
+    private float reloadTime = 0;
+
+    [SerializeField]
+    private float countDown;
 
     [SerializeField]
     private Camera cam;
@@ -16,6 +22,9 @@ public class PlayerShoot : MonoBehaviour {
     [SerializeField]
     private float duration = 1f;
 
+    [SerializeField]
+    private GameObject projectile;
+
 
     void Start()
     {
@@ -24,15 +33,26 @@ public class PlayerShoot : MonoBehaviour {
             Debug.LogError("No camera referenced");
             this.enabled = false;
         }
+
     }
 
     void Update()
     {
-        
-            if (Input.GetButtonDown("Fire1"))
+
+        reloadTime -= Time.deltaTime;
+
+        if(reloadTime < 0)
+        {
+            projectile.SetActive(true);
+        }
+
+        if ((Input.GetButtonDown("Fire1")) && (reloadTime < 0))
         {
             Shoot();
+            projectile.SetActive(false);
+            reloadTime = countDown;
         }
+
     }
 
     private void Shoot()
