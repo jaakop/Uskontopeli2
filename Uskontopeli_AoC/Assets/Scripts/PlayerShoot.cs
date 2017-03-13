@@ -20,6 +20,9 @@ public class PlayerShoot : MonoBehaviour {
     private GameObject gun;
 
     [SerializeField]
+    private GameObject arrow;
+
+    [SerializeField]
     private float duration = 1f;
 
     [SerializeField]
@@ -63,11 +66,12 @@ public class PlayerShoot : MonoBehaviour {
         {
                 //We hit something
                 Debug.Log("We hit " + _hit.collider.name);
-            DrawALine(gun.transform.position, _hit.point, Color.yellow);
+            Instantiate(arrow, _hit.point, transform.rotation);
+            //DrawALine(gun.transform.position, _hit.point, Color.yellow);
         }
       else
       {
-            DrawALine(gun.transform.position, rayOrigin + (cam.transform.forward * weapon.range), Color.yellow);
+           // DrawALine(gun.transform.position, rayOrigin + (cam.transform.forward * weapon.range), Color.yellow);
       }
         
 
