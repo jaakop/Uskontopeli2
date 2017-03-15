@@ -5,18 +5,21 @@ public class PauseGame : MonoBehaviour {
 
     private void Start()
     {
+        //Set the cursor ready
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     public void Update ()
     {
+        //Reveals the cursor
         if(canvas.gameObject.activeInHierarchy == false)
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
 
+        //Checks if the Esc is pressed and executes the void Pause
         if (Input.GetKeyDown(KeyCode.Escape))
         {
                 Pause();
@@ -25,6 +28,7 @@ public class PauseGame : MonoBehaviour {
     
     public void Pause()
     {
+        //Pauses the game
         if (canvas.gameObject.activeInHierarchy == false)
         {
             canvas.gameObject.SetActive(true);
@@ -32,6 +36,8 @@ public class PauseGame : MonoBehaviour {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
+
+        //Unpauses the game
         else
         {
             canvas.gameObject.SetActive(false);
@@ -41,6 +47,7 @@ public class PauseGame : MonoBehaviour {
         }
     }
 
+    //Leaves the game
     public void Exit()
     {
         Application.Quit();
