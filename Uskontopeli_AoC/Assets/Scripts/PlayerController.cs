@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private float lookSensivity = 3f;
 
+
     private PlayerMotor motor;
 
     void Start()

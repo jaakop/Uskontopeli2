@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseGame : MonoBehaviour {
     public Transform canvas;
+    public Transform endCanvas;
 
     private void Start()
     {
@@ -13,10 +15,13 @@ public class PauseGame : MonoBehaviour {
     public void Update ()
     {
         //Reveals the cursor
-        if(canvas.gameObject.activeInHierarchy == false)
+        if(canvas.gameObject.activeInHierarchy == false )
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            if (endCanvas.gameObject.activeInHierarchy == false)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
         }
 
         //Checks if the Esc is pressed and executes the void Pause
@@ -52,6 +57,12 @@ public class PauseGame : MonoBehaviour {
     {
         Application.Quit();
         Debug.Log("Exited");
+    }
+
+    public void ReStart()
+    {
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 }
