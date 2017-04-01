@@ -18,6 +18,9 @@ public class PlayerShoot : MonoBehaviour {
     private LayerMask mask;
 
     [SerializeField]
+    private LayerMask shootableMask;
+
+    [SerializeField]
     private GameObject gun;
 
     [SerializeField]
