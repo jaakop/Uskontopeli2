@@ -3,6 +3,7 @@
 public class PlayerShoot : MonoBehaviour {
 
     public PlayerWeapon weapon;
+
     private bool loaded = true;
 
     private float reloadTime = 0;
@@ -17,7 +18,13 @@ public class PlayerShoot : MonoBehaviour {
     private LayerMask mask;
 
     [SerializeField]
+    private LayerMask shootableMask;
+
+    [SerializeField]
     private GameObject gun;
+
+    [SerializeField]
+    private GameObject arrow;
 
     [SerializeField]
     private float duration = 1f;
@@ -38,18 +45,23 @@ public class PlayerShoot : MonoBehaviour {
 
     void Update()
     {
-
+        //Change the reload time
         reloadTime -= Time.deltaTime;
 
+        //Make sure the reload time is correct before firing
         if(reloadTime < 0)
         {
+            //Load the arrow
             projectile.SetActive(true);
         }
 
         if ((Input.GetButtonDown("Fire1")) && (reloadTime < 0))
         {
+            //Shoots the object and un reloads the arrow
             Shoot();
             projectile.SetActive(false);
+
+            //Set the reload time
             reloadTime = countDown;
         }
 
@@ -58,16 +70,19 @@ public class PlayerShoot : MonoBehaviour {
     private void Shoot()
     {
         RaycastHit _hit;
+
         Vector3 rayOrigin = cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0.0f));
+
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
                 //We hit something
                 Debug.Log("We hit " + _hit.collider.name);
-            DrawALine(gun.transform.position, _hit.point, Color.yellow);
+            //Instantiate(arrow, _hit.point, transform.rotation);
+            //DrawALine(gun.transform.position, _hit.point, Color.yellow);
         }
       else
       {
-            DrawALine(gun.transform.position, rayOrigin + (cam.transform.forward * weapon.range), Color.yellow);
+           // DrawALine(gun.transform.position, rayOrigin + (cam.transform.forward * weapon.range), Color.yellow);
       }
         
 
@@ -75,6 +90,7 @@ public class PlayerShoot : MonoBehaviour {
 
     void DrawALine(Vector3 start, Vector3 end, Color color)
     {
+        //The code required to draw the line
         GameObject Line = new GameObject();
         Line.transform.position = start;
         Line.AddComponent<LineRenderer>();

@@ -37,8 +37,9 @@ public class PlayerMotor : MonoBehaviour {
 
 
     }
-        //Run every physics iteration
-        void FixedUpdate()
+
+    //Run every physics iteration
+    void FixedUpdate()
     {
         PerformMovement();
         PerformRotation();
