@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class PauseGame : MonoBehaviour {
     public Transform canvas;
     public Transform endCanvas;
+    public Transform winCanvas;
 
     private void Start()
     {
@@ -19,8 +20,11 @@ public class PauseGame : MonoBehaviour {
         {
             if (endCanvas.gameObject.activeInHierarchy == false)
             {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+                if (winCanvas.gameObject.activeInHierarchy == false)
+                {
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
             }
         }
 

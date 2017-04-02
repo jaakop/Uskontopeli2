@@ -32,6 +32,9 @@ public class PlayerShoot : MonoBehaviour {
     [SerializeField]
     private GameObject projectile;
 
+    [SerializeField]
+    public int damage = 1;
+
 
     void Start()
     {
@@ -77,6 +80,14 @@ public class PlayerShoot : MonoBehaviour {
         {
                 //We hit something
                 Debug.Log("We hit " + _hit.collider.name);
+            if(Physics.Raycast(cam.transform.position, cam.transform.forward, out  _hit, weapon.range, shootableMask))
+            {
+                EnemyHealth enemyhealth = _hit.collider.GetComponent<EnemyHealth>();
+                if(enemyhealth != null)
+                {
+                    enemyhealth.TakeDamage(damage, _hit.point);
+                }
+            }
             //Instantiate(arrow, _hit.point, transform.rotation);
             //DrawALine(gun.transform.position, _hit.point, Color.yellow);
         }
