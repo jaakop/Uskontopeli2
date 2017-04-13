@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour {
 
@@ -47,12 +48,15 @@ public class EnemyHealth : MonoBehaviour {
         isDead = true;
         boxCollider.isTrigger = true;
 
+  
+        SceneManager.LoadScene("Level2");
+        SceneManager.UnloadScene("Level1");
+        
 
-
-        winCanvas.gameObject.SetActive(true);
-        Time.timeScale = 0;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+       // winCanvas.gameObject.SetActive(true);
+       // Time.timeScale = 0;
+       // Cursor.lockState = CursorLockMode.None;
+       // Cursor.visible = true;
     }
 
     public void StartSinking()

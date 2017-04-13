@@ -5,9 +5,11 @@ public class PauseGame : MonoBehaviour {
     public Transform canvas;
     public Transform endCanvas;
     public Transform winCanvas;
+    
 
     private void Start()
     {
+
         //Set the cursor ready
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -33,7 +35,16 @@ public class PauseGame : MonoBehaviour {
         {
                 Pause();
         }
-	}
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+
+            SceneManager.UnloadSceneAsync("Level1");
+            SceneManager.LoadScene("Level2");
+
+        }
+
+    }
     
     public void Pause()
     {
@@ -66,7 +77,7 @@ public class PauseGame : MonoBehaviour {
     public void ReStart()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex);
     }
 
 }
