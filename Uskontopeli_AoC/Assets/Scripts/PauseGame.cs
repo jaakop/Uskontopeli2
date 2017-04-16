@@ -77,7 +77,11 @@ public class PauseGame : MonoBehaviour {
     public void ReStart()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex);
+        
     }
 
 }

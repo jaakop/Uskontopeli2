@@ -49,14 +49,14 @@ public class EnemyHealth : MonoBehaviour {
         boxCollider.isTrigger = true;
 
   
-        SceneManager.LoadScene("Level2");
-        SceneManager.UnloadScene("Level1");
+        //SceneManager.LoadScene("Level2");
+        //SceneManager.UnloadScene("Level1");
         
 
-       // winCanvas.gameObject.SetActive(true);
-       // Time.timeScale = 0;
-       // Cursor.lockState = CursorLockMode.None;
-       // Cursor.visible = true;
+       winCanvas.gameObject.SetActive(true);
+       Time.timeScale = 0;
+       Cursor.lockState = CursorLockMode.None;
+       Cursor.visible = true;
     }
 
     public void StartSinking()
