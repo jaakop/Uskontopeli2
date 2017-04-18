@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour {
 
+    public Transform loadingCanvas;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -17,8 +19,10 @@ public class MenuController : MonoBehaviour {
 
     public void NewGame()
     {
-        SceneManager.LoadScene("Level1");
-        SceneManager.UnloadScene("MainMenu");
+        loadingCanvas.gameObject.SetActive(true);
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void Exit()

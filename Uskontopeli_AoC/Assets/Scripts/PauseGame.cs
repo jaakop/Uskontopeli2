@@ -38,10 +38,10 @@ public class PauseGame : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.C))
         {
-
-            SceneManager.UnloadSceneAsync("Level1");
-            SceneManager.LoadScene("Level2");
-
+            winCanvas.gameObject.SetActive(true);
+            Time.timeScale = 1;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
     }

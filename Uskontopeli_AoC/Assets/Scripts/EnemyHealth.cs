@@ -50,11 +50,11 @@ public class EnemyHealth : MonoBehaviour {
 
   
         //SceneManager.LoadScene("Level2");
-        //SceneManager.UnloadScene("Level1");
+        //SceneManager.UnloadScene("LoadingScene");
         
 
        winCanvas.gameObject.SetActive(true);
-       Time.timeScale = 0;
+       Time.timeScale = 1;
        Cursor.lockState = CursorLockMode.None;
        Cursor.visible = true;
     }
