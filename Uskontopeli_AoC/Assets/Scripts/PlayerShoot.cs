@@ -88,7 +88,7 @@ public class PlayerShoot : MonoBehaviour {
                     enemyhealth.TakeDamage(damage, _hit.point);
                 }
             }
-            //Instantiate(arrow, _hit.point, transform.rotation);
+            Instantiate(arrow, _hit.point, Quaternion.LookRotation(cam.transform.forward, cam.transform.up));
             //DrawALine(gun.transform.position, _hit.point, Color.yellow);
         }
       else
