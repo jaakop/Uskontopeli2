@@ -85,10 +85,13 @@ public class PlayerShoot : MonoBehaviour {
                 EnemyHealth enemyhealth = _hit.collider.GetComponent<EnemyHealth>();
                 if(enemyhealth != null)
                 {
-                    enemyhealth.TakeDamage(damage, _hit.point);
+                    enemyhealth.TakeDamage(weapon.damage, _hit.point);
                 }
             }
-            Instantiate(arrow, _hit.point, Quaternion.LookRotation(cam.transform.forward, cam.transform.up));
+            else
+            {
+                Instantiate(arrow, _hit.point, Quaternion.LookRotation(cam.transform.forward, cam.transform.up));
+            }
             //DrawALine(gun.transform.position, _hit.point, Color.yellow);
         }
       else
