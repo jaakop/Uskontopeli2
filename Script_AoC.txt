@@ -10,7 +10,7 @@ Chapter 1: Whole chapter
 
 Roni: The story begins with our hero waking up hungover in a ditch, when he notices that something is wrong...
 Roni: He notices a (with slight touch of laughter) BLACK WTF!? creature that lunges towards him after he said. 
-Huugo: n‰‰h‰h‰ you in da wrong side of these woods huehue.
+Huugo: n√§√§h√§h√§ you in da wrong side of these woods huehue.
 Roni: What the hell is wrong with you guys?
 	
 	The Battle Begins. After the hiisi is defeated he runs away and yells 
@@ -22,7 +22,7 @@ Huugo: This is not even my final form!!!
 
 Chapter 2:Intro
 
-Roni: Our "Hero" continues hi's way to torppa(‰nkytys)
+Roni: Our "Hero" continues hi's way to torppa(√§nkytys)
 Roni: After making hi's way to the torppa which had been burned down and the Hiisi had stolen hi's kids.
 Roni: Oh how unfortunate isn't it "Hero" (sarcasm) seems like you have to save the kidz... (optional)
 Roni: Or you could go get the tresure now? (main quest)
@@ -46,7 +46,7 @@ Huugo You're here this is so great. Do you like what i've done with the place?
 
 	Another bossfight
 	
-Lines for the middle of the bossfight maybe?: You can't beat me n‰‰h‰h‰‰‰! You are a fake Hero n‰‰h‰h‰‰‰!
+Lines for the middle of the bossfight maybe?: You can't beat me n√§√§h√§h√§√§√§! You are a fake Hero n√§√§h√§h√§√§√§!
 	
 	After defeating the Hiisi it runs away again, and you get to continue your quest to find out what's happening. 
 	As you make your way to where the tresure was supposed to be you notice that it's gone.
@@ -104,3 +104,5 @@ Roni: Now that our "hero" had found the tresure he decided that it was time to g
 Roni: Ah great we're here (Ominus laughter)
 
 	END OF CHAPTER 2 
+	
+	Script Done By: Jasper Kaski
