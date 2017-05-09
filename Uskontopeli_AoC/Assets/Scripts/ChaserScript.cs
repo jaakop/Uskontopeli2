@@ -9,7 +9,7 @@ public class ChaserScript : MonoBehaviour {
     public int health = 10;
 
     [SerializeField]
-    public int damage = 1;
+    public float damage = 10f;
 
     [SerializeField]
     public float attackSpeed = 1f;
@@ -18,9 +18,11 @@ public class ChaserScript : MonoBehaviour {
 
     public float attackTimer = 0f;
 
-    public Transform endCanvas;
+    public Transform winCanvas;
 
     public Transform player;
+
+    public Transform playerHealth;
 
     public float walkingDistance = 10;
 
@@ -29,6 +31,8 @@ public class ChaserScript : MonoBehaviour {
     public float smoothTime = 10f;
 
     private Vector3 smoothVelocity = Vector3.zero;
+
+    public bool isDamaging;
 
 	void Start () {
 		
@@ -49,8 +53,9 @@ public class ChaserScript : MonoBehaviour {
             {
                 if (attackTimer < attackSpeed)
                 {
+                    playerHealth.SendMessage("TakeDamage", damage);
                     attackTimer = attackDelay;
-                    health -= damage;
+                    //health -= damage;
                     
                 }
             }
@@ -64,7 +69,7 @@ public class ChaserScript : MonoBehaviour {
     void EndGame()
     {
 
-        endCanvas.gameObject.SetActive(true);
+        winCanvas.gameObject.SetActive(true);
         Time.timeScale = 0;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;

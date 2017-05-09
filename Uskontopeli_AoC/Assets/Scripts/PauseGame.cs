@@ -4,9 +4,12 @@ using UnityEngine.SceneManagement;
 public class PauseGame : MonoBehaviour {
     public Transform canvas;
     public Transform endCanvas;
+    public Transform winCanvas;
+    
 
     private void Start()
     {
+
         //Set the cursor ready
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -19,8 +22,11 @@ public class PauseGame : MonoBehaviour {
         {
             if (endCanvas.gameObject.activeInHierarchy == false)
             {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+                if (winCanvas.gameObject.activeInHierarchy == false)
+                {
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
             }
         }
 
@@ -29,7 +35,16 @@ public class PauseGame : MonoBehaviour {
         {
                 Pause();
         }
-	}
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            winCanvas.gameObject.SetActive(true);
+            Time.timeScale = 1;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+
+    }
     
     public void Pause()
     {
@@ -62,7 +77,11 @@ public class PauseGame : MonoBehaviour {
     public void ReStart()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene ().buildIndex);
+        
     }
 
 }

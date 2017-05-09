@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour {
+
+    [SerializeField]
+    public Image currentHealthBar;
 
     [SerializeField]
     private float speed = 5f;
@@ -9,6 +13,14 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private float lookSensivity = 3f;
 
+    [SerializeField]
+    private Transform winCanvas;
+
+    [SerializeField]
+    public float maXHealth = 10f;
+    public float currentHealth = 10f;
+
+    public float healTimer = 20;
 
     private PlayerMotor motor;
 
@@ -19,6 +31,13 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
+        healTimer -= Time.deltaTime;
+
+        if(healTimer < 0)
+        {
+            HealDamage(1f);
+        }
+
         //Calculate movement velocity as 3d vector
         float _xMov = Input.GetAxisRaw("Horizontal");
         float _yMov = Input.GetAxisRaw("Vertical");
@@ -48,6 +67,40 @@ public class PlayerController : MonoBehaviour {
         //Apply camera rotation
         motor.RotateCamera(_cameraRotation);
 
+        UpdateHealthBar();
+
+    }
+
+    void UpdateHealthBar()
+    {
+        float ratio = currentHealth / maXHealth;
+        currentHealthBar.rectTransform.localScale = new Vector3(ratio, 1, 1);
+    }
+
+    void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        if (currentHealth <= 0)
+        {
+            currentHealth = 0;
+            Debug.Log("IsDead");
+
+            winCanvas.gameObject.SetActive(true);
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        healTimer = 20;
+    }
+
+    void HealDamage(float heal)
+    {
+        currentHealth += heal;
+        if(currentHealth >= maXHealth)
+        {
+            currentHealth = maXHealth;
+        }
+        healTimer = 1;
     }
 
 }
