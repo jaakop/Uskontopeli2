@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour {
 
     public Transform loadingCanvas;
+    public Transform mainCanvas;
+    public Transform creditsCanvas;
 
 	// Use this for initialization
 	void Start () {
@@ -29,6 +31,12 @@ public class MenuController : MonoBehaviour {
     {
         Application.Quit();
         Debug.Log("Exited");
+    }
+
+    public void Credits()
+    {
+        creditsCanvas.gameObject.SetActive(true);
+        mainCanvas.gameObject.SetActive(false);
     }
 
 }
