@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-public class PlayerShoot : MonoBehaviour {
-
+public class PlayerShoot : MonoBehaviour
+{
     public PlayerWeapon weapon;
 
     private bool loaded = true;
@@ -41,7 +41,7 @@ public class PlayerShoot : MonoBehaviour {
         if (cam == null)
         {
             Debug.LogError("No camera referenced");
-            this.enabled = false;
+            enabled = false;
         }
 
     }

@@ -1,25 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CreditsScript : MonoBehaviour {
-
+public class CreditsScript : MonoBehaviour
+{
     public Transform mainCanvas;
     public Transform creditsCanvas;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown("space"))
+	void Update ()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             mainCanvas.gameObject.SetActive(true);
             creditsCanvas.gameObject.SetActive(false);
         }
-
-
     }
 }

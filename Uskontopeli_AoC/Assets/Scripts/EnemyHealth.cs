@@ -1,46 +1,25 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour {
-
-    public int startingHealth = 10;
-    public int currentHealth;
+public class EnemyHealth : MonoBehaviour
+{
+    public int currentHealth = 10;
     public float sinkSpeed = 2.5f;
     public Transform winCanvas;
 
-    BoxCollider boxCollider;
+    public BoxCollider boxCollider;
     bool isDead;
     bool isSinking;
-
-    private void Awake()
-    {
-        boxCollider = GetComponent<BoxCollider>();
-
-        currentHealth = startingHealth;
-    }
 
 	void Update ()
     {
         if (isSinking)
-        {
             transform.Translate(-Vector3.up * sinkSpeed * Time.deltaTime);
-        }
-
 	}
 
     public void TakeDamage(int amount, Vector3 hitPoint)
     {
-        if (isDead)
-            return;
-
-        currentHealth -= amount;
-
-        if(currentHealth <= 0)
-        {
+        if(!isDead && (currentHealth -= amount) <= 0)
             Death();
-        }
     }
 
     void Death()
@@ -55,6 +34,7 @@ public class EnemyHealth : MonoBehaviour {
         
        winCanvas.gameObject.SetActive(true);
        Time.timeScale = 0;
+
        Cursor.lockState = CursorLockMode.None;
        Cursor.visible = true;
     }

@@ -2,7 +2,9 @@
 using UnityEngine.UI;
 
 [RequireComponent(typeof(PlayerMotor))]
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
+    public static PlayerController Player;
 
     [SerializeField]
     public Image currentHealthBar;
@@ -22,21 +24,17 @@ public class PlayerController : MonoBehaviour {
 
     public float healTimer = 20;
 
-    private PlayerMotor motor;
+    public PlayerMotor motor;
 
-    void Start()
+    void Awake()
     {
-        motor = GetComponent<PlayerMotor>();      
+        Player = this; 
     }
 
     void Update()
     {
-        healTimer -= Time.deltaTime;
-
-        if(healTimer < 0)
-        {
-            HealDamage(1f);
-        }
+        if ((healTimer -= Time.deltaTime) < 0)
+            HealDamage(1);
 
         //Calculate movement velocity as 3d vector
         float _xMov = Input.GetAxisRaw("Horizontal");
@@ -53,22 +51,19 @@ public class PlayerController : MonoBehaviour {
 
         //Calculate rotation as a 3D verctor (turning around)
         float _yRot = Input.GetAxisRaw("Mouse X");
-
-        Vector3 _rotation = new Vector3(0f, _yRot, 0f) * lookSensivity;
+        Vector3 _rotation = new Vector3(0f, _yRot * lookSensivity);
 
         //Apply rotation
         motor.Rotate(_rotation);
 
         //Calculate camera rotation as a 3D verctor (turning around)
         float _xRot = Input.GetAxisRaw("Mouse Y");
-
-        Vector3 _cameraRotation = new Vector3(_xRot, 0f, 0f) * lookSensivity;
+        Vector3 _cameraRotation = new Vector3(_xRot * lookSensivity, 0f);
 
         //Apply camera rotation
         motor.RotateCamera(_cameraRotation);
 
         UpdateHealthBar();
-
     }
 
     void UpdateHealthBar()
@@ -77,30 +72,26 @@ public class PlayerController : MonoBehaviour {
         currentHealthBar.rectTransform.localScale = new Vector3(ratio, 1, 1);
     }
 
-    void TakeDamage(float damage)
+    public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        if (currentHealth <= 0)
+        if ((currentHealth -= damage) <= 0)
         {
             currentHealth = 0;
             Debug.Log("IsDead");
 
             winCanvas.gameObject.SetActive(true);
             Time.timeScale = 0;
+
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
+
         healTimer = 20;
     }
 
     void HealDamage(float heal)
     {
-        currentHealth += heal;
-        if(currentHealth >= maXHealth)
-        {
-            currentHealth = maXHealth;
-        }
+        currentHealth = Mathf.Min(currentHealth + heal, maXHealth);
         healTimer = 1;
     }
-
 }

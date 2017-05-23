@@ -1,23 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
-public class MenuController : MonoBehaviour {
-
+public class MenuController : MonoBehaviour
+{
     public Transform loadingCanvas;
     public Transform mainCanvas;
     public Transform creditsCanvas;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public void NewGame()
     {
@@ -38,5 +25,4 @@ public class MenuController : MonoBehaviour {
         creditsCanvas.gameObject.SetActive(true);
         mainCanvas.gameObject.SetActive(false);
     }
-
 }
