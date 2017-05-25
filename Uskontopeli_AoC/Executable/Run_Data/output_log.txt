@@ -1,52 +1,122 @@
-Mono path[0] = 'C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Executable/Run_Data/Managed'
-Mono path[1] = 'C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Executable/Run_Data/Mono'
-Mono config path = 'C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Executable/Run_Data/Mono/etc'
-PlayerConnection initialized from C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Executable/Run_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55173
-Multi-casting "[IP] 192.168.0.22 [Port] 55173 [Flags] 2 [Guid] 1659467489 [EditorId] 2347640181 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-B7RV611) [Debug] 0" to [225.0.0.222:54997]...
-Started listening to [0.0.0.0:55173]
-PlayerConnection already initialized - listening to [0.0.0.0:55173]
-Player data archive not found at `C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Executable/Run_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.0f3 (497a0f351392)
+Mono path[0] = 'C:/Users/Admin/Desktop/Uskontopeli2/Uskontopeli_AoC/Executable/Run_Data/Managed'
+Mono path[1] = 'C:/Users/Admin/Desktop/Uskontopeli2/Uskontopeli_AoC/Executable/Run_Data/Mono'
+Mono config path = 'C:/Users/Admin/Desktop/Uskontopeli2/Uskontopeli_AoC/Executable/Run_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Admin/Desktop/Uskontopeli2/Uskontopeli_AoC/Executable/Run_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55295
+Multi-casting "[IP] 192.168.1.102 [Port] 55295 [Flags] 2 [Guid] 1143851323 [EditorId] 2347640181 [Version] 1048832 [Id] WindowsPlayer(JaakkeliKone) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55295]
+PlayerConnection already initialized - listening to [0.0.0.0:55295]
+Player data archive not found at `C:/Users/Admin/Desktop/Uskontopeli2/Uskontopeli_AoC/Executable/Run_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.0f3 (497a0f351392)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 980M (ID=0x13d7)
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
     Vendor:   NVIDIA
-    VRAM:     3072 MB
-    Driver:   22.21.13.8194
+    VRAM:     3019 MB
+    Driver:   22.21.13.8205
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.087 seconds
-Platform assembly: C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Executable\Run_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.024 seconds
+Platform assembly: C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Admin\Desktop\Uskontopeli2\Uskontopeli_AoC\Executable\Run_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 144Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.267168 ms
+UnloadTime: 1.104714 ms
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 338c -> priority: 1 
-  Thread -> id: 175c -> priority: 1 
-  Thread -> id: 1828 -> priority: 1 
-  Thread -> id: 3348 -> priority: 1 
+  Thread -> id: 247c -> priority: 1 
+  Thread -> id: 1adc -> priority: 1 
+  Thread -> id: 1b34 -> priority: 1 
+  Thread -> id: 378 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.007093 ms
-System memory in use before: 117.7 MB.
-System memory in use after: 121.1 MB.
+UnloadTime: 5.039331 ms
+System memory in use before: 118.0 MB.
+System memory in use after: 120.9 MB.
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 121094.
-Total: 19.203333 ms (FindLiveObjects: 6.234787 ms CreateObjectMapping: 1.359147 ms MarkObjects: 11.477155 ms  DeleteObjects: 0.130664 ms)
+Total: 18.982018 ms (FindLiveObjects: 6.319073 ms CreateObjectMapping: 1.102964 ms MarkObjects: 11.438334 ms  DeleteObjects: 0.120477 ms)
+
+We hit Tree (1171)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:82)
+PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:64)
+ 
+(Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
+
+We hit Tree (1171)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:82)
+PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:64)
+ 
+(Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
+
+We hit Tree (1171)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:82)
+PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:64)
+ 
+(Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
+
+We hit Tree (1171)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:82)
+PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:64)
+ 
+(Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
+
+We hit Tree (1171)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:82)
+PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:64)
+ 
+(Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
+
+We hit Hiisi1 1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:82)
+PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:64)
+ 
+(Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
+
+We hit Hiisi1 1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:82)
+PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopeli2-Jaakko\Uskontopeli_AoC\Assets\Scripts\PlayerShoot.cs:64)
+ 
+(Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
 
 We hit Hiisi1 1
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
@@ -78,7 +148,7 @@ PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopel
  
 (Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
 
-We hit Plane
+We hit Hiisi1 1
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -88,7 +158,7 @@ PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopel
  
 (Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
 
-We hit Plane
+We hit Hiisi1 1
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -98,7 +168,7 @@ PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopel
  
 (Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
 
-We hit Plane
+We hit Hiisi1 1
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -108,7 +178,7 @@ PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopel
  
 (Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
 
-We hit Plane
+We hit Hiisi1 1
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -118,7 +188,7 @@ PlayerShoot:Update() (at C:\Users\joona\Downloads\Uskontopeli2-Jaakko\Uskontopel
  
 (Filename: C:/Users/joona/Downloads/Uskontopeli2-Jaakko/Uskontopeli2-Jaakko/Uskontopeli_AoC/Assets/Scripts/PlayerShoot.cs Line: 82)
 
-We hit Plane
+We hit Hiisi1 1
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)

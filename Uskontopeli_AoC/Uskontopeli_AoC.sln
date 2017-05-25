@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uskontopeli_AoC.Plugins", "Uskontopeli_AoC.Plugins.csproj", "{BAE810EB-4287-1160-46BC-ABA1612DA778}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uskontopeli_AoC", "Uskontopeli_AoC.csproj", "{E0512F5D-1414-FED3-944C-8094DFAA940E}"
