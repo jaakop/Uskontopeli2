@@ -7,7 +7,8 @@ public class RenderManager : MonoBehaviour
     public const float CHUNK_EXTENT = 10;
     public const float UPDATE_INTERVAL = 1;
 
-    public const int RENDER_RADIUS = 5;
+    [SerializeField]
+    public const int RENDER_RADIUS = 8;
     public const int RENDER_DIAMETER = RENDER_RADIUS * 2 + 1;
 
     public class Chunk
