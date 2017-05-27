@@ -11,9 +11,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private float speed = 5f;
-
-    [SerializeField]
-    private float lookSensivity = 3f;
+    
+    public static float lookSensivity = 3f;
 
     [SerializeField]
     private Transform winCanvas;

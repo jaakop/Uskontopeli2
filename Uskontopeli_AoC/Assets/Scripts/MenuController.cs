@@ -20,6 +20,11 @@ public class MenuController : MonoBehaviour
         Debug.Log("Exited");
     }
 
+    public void Options()
+    {
+
+    }
+
     public void Credits()
     {
         creditsCanvas.gameObject.SetActive(true);
