@@ -8,8 +8,8 @@ public class RenderManager : MonoBehaviour
     public const float UPDATE_INTERVAL = 1;
 
     [SerializeField]
-    public const int RENDER_RADIUS = 8;
-    public const int RENDER_DIAMETER = RENDER_RADIUS * 2 + 1;
+    public static int RENDER_RADIUS = 8;
+    public static int RENDER_DIAMETER = RENDER_RADIUS * 2 + 1;
 
     public class Chunk
     {
@@ -92,7 +92,7 @@ public class RenderManager : MonoBehaviour
         int PlayerX = (int)(PlayerController.Player.transform.position.x / CHUNK_EXTENT);
         int PlayerY = (int)(PlayerController.Player.transform.position.z / CHUNK_EXTENT);
 
-        Chunk[] Chunks = new Chunk[ActiveChunks.Length];
+        Chunk[] Chunks = new Chunk[RENDER_DIAMETER * RENDER_DIAMETER];
             
         for (int Y = -RENDER_RADIUS, i = 0; Y < RENDER_RADIUS; Y++)
         {
@@ -126,4 +126,11 @@ public class RenderManager : MonoBehaviour
 
         ActiveChunks = Chunks;
     }
+
+    public static void ChangeRenderDistance(int _renderDistance)
+    {
+        RENDER_RADIUS = _renderDistance;
+        RENDER_DIAMETER = RENDER_RADIUS * 2 + 1;
+    }
+
 }
