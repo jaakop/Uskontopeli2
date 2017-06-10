@@ -29,14 +29,6 @@ public class PauseGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
             Pause();
 
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            winCanvas.gameObject.SetActive(true);
-            Time.timeScale = 1;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-
     }
     
     public void Pause()
